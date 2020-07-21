@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2B2727"
+    android:backgroundTint="#252627"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:layout_width="195dp"
+        android:layout_height="160dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/RdbBtm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/RdbBtm"
+            android:textColor="#246EA8" />
+
+        <RadioButton
+            android:id="@+id/RdbSpm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/RdbSpm"
+            android:textColor="#246EA8"
+            tools:text="@string/RdbSpm" />
+
+        <RadioButton
+            android:id="@+id/RdbMlrMrv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/RdbMlrMrv"
+            android:textColor="#246EA8" />
+
+        <RadioButton
+            android:id="@+id/RdbLntnVrd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/RdbLntnVrd"
+            android:textColor="#246EA8" />
+
+        <RadioButton
+            android:id="@+id/RdbFlsh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/RdbFlsh"
+            android:textColor="#246EA8" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="Observar"
+        android:text="@string/BtnInfo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.663" />
+</androidx.constraintlayout.widget.ConstraintLayout>
